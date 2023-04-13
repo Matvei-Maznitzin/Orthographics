@@ -19,7 +19,7 @@ namespace Orthographics
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            MainMenuControl mmc = new MainMenuControl();
+            MainMenuControl mmc = new MainMenuControl(MainPanel);
             mmc.Left = (this.ClientSize.Width - mmc.Width) / 2;
             mmc.Top = (this.ClientSize.Height - mmc.Height) / 2;
             MainPanel.Controls.Add(mmc);

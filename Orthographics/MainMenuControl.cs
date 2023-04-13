@@ -12,9 +12,20 @@ namespace Orthographics
 {
     public partial class MainMenuControl : UserControl
     {
-        public MainMenuControl()
+        private Control parent;
+        public MainMenuControl(Control parent)
         {
+            this.parent = parent;
             InitializeComponent();
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            parent.Controls.Clear();
+            LoginControl lc = new LoginControl(parent);
+            lc.Left = (parent.Width - lc.Width) / 2;
+            lc.Top = (parent.Height - lc.Height) / 2;
+            parent.Controls.Add(lc);
         }
     }
 }
