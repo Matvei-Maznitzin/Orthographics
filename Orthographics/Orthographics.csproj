@@ -62,10 +62,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBaseController.cs" />
-    <Compile Include="LoginControl.cs">
+    <Compile Include="Controls\GameControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LoginControl.Designer.cs">
+    <Compile Include="Controls\GameControl.Designer.cs">
+      <DependentUpon>GameControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginControl.Designer.cs">
       <DependentUpon>LoginControl.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
@@ -74,10 +80,10 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenuControl.cs">
+    <Compile Include="Controls\MainMenuControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MainMenuControl.Designer.cs">
+    <Compile Include="Controls\MainMenuControl.Designer.cs">
       <DependentUpon>MainMenuControl.cs</DependentUpon>
     </Compile>
     <Compile Include="OrthographicsDBDataSet.Designer.cs">
@@ -85,22 +91,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OrthographicsDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SingleSelectQuiz.cs">
+    <Compile Include="Controls\ProfileControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SingleSelectQuiz.Designer.cs">
+    <Compile Include="Controls\ProfileControl.Designer.cs">
+      <DependentUpon>ProfileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\SingleSelectQuiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SingleSelectQuiz.Designer.cs">
       <DependentUpon>SingleSelectQuiz.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="LoginControl.resx">
+    <Compile Include="Controls\TheoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TheoryControl.Designer.cs">
+      <DependentUpon>TheoryControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\GameControl.resx">
+      <DependentUpon>GameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LoginControl.resx">
       <DependentUpon>LoginControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuControl.resx">
+    <EmbeddedResource Include="Controls\MainMenuControl.resx">
       <DependentUpon>MainMenuControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProfileControl.resx">
+      <DependentUpon>ProfileControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,8 +135,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SingleSelectQuiz.resx">
+    <EmbeddedResource Include="Controls\SingleSelectQuiz.resx">
       <DependentUpon>SingleSelectQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TheoryControl.resx">
+      <DependentUpon>TheoryControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="OrthographicsDBDataSet.xsc">
       <DependentUpon>OrthographicsDBDataSet.xsd</DependentUpon>
@@ -146,6 +173,20 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>OrthographicsDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Theory\page_1.html" />
+    <Content Include="Theory\page_10.html" />
+    <Content Include="Theory\page_11.html" />
+    <Content Include="Theory\page_12.html" />
+    <Content Include="Theory\page_13.html" />
+    <Content Include="Theory\page_14.html" />
+    <Content Include="Theory\page_2.html" />
+    <Content Include="Theory\page_3.html" />
+    <Content Include="Theory\page_4.html" />
+    <Content Include="Theory\page_5.html" />
+    <Content Include="Theory\page_6.html" />
+    <Content Include="Theory\page_7.html" />
+    <Content Include="Theory\page_8.html" />
+    <Content Include="Theory\page_9.html" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

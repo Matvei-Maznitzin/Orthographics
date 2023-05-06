@@ -21,8 +21,12 @@ namespace Orthographics
             command.Parameters.AddWithValue("login", login);
             command.Parameters.AddWithValue("password", password);
             SqlDataReader reader = command.ExecuteReader();
+
             if (reader.HasRows)
+            {
+                connection.Close();
                 return true;
+            }
             connection.Close();
             return false;
         }
