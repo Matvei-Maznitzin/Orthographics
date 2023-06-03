@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.splitContainer = new System.Windows.Forms.SplitContainer();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.nextButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel2.SuspendLayout();
             this.splitContainer.SuspendLayout();
@@ -45,29 +45,29 @@
             // 
             // splitContainer.Panel2
             // 
-            this.splitContainer.Panel2.Controls.Add(this.button2);
-            this.splitContainer.Panel2.Controls.Add(this.button1);
+            this.splitContainer.Panel2.Controls.Add(this.cancelButton);
+            this.splitContainer.Panel2.Controls.Add(this.nextButton);
             this.splitContainer.Size = new System.Drawing.Size(1009, 576);
             this.splitContainer.SplitterDistance = 474;
             this.splitContainer.TabIndex = 0;
             // 
-            // button2
+            // cancelButton
             // 
-            this.button2.Location = new System.Drawing.Point(839, 23);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Завершить";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cancelButton.Location = new System.Drawing.Point(839, 23);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(111, 40);
+            this.cancelButton.TabIndex = 1;
+            this.cancelButton.Text = "Завершить";
+            this.cancelButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // nextButton
             // 
-            this.button1.Location = new System.Drawing.Point(466, 23);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Далее";
-            this.button1.UseVisualStyleBackColor = true;
+            this.nextButton.Location = new System.Drawing.Point(466, 23);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(111, 40);
+            this.nextButton.TabIndex = 0;
+            this.nextButton.Text = "Далее";
+            this.nextButton.UseVisualStyleBackColor = true;
             // 
             // GameControl
             // 
@@ -86,7 +86,7 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Button nextButton;
     }
 }

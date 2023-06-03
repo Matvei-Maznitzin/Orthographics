@@ -20,6 +20,7 @@ namespace Orthographics
             InitializeComponent();
             this.parent = parent;
             this.userId = userId;
+
             TheoryControl tc = new TheoryControl("../../Theory/page_1.html");
             tc.Dock = DockStyle.Fill;
             tc.Margin = new Padding(10);
