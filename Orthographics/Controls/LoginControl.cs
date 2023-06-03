@@ -23,14 +23,15 @@ namespace Orthographics
         {
             string login = loginTextBox.Text;
             string password = passwordTextBox.Text;
-            if (!DataBaseController.Authorize(login, password))
+            long id = DataBaseController.Authorize(login, password);
+            if (id == -1)
             {
                 MessageBox.Show("Неправильно введена пара логин-пароль.", "Ошибка авторизации", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 parent.Controls.Clear();
-                ProfileControl pc = new ProfileControl(parent);
+                ProfileControl pc = new ProfileControl(parent, id);
                 pc.Left = (parent.Width - pc.Width) / 2;
                 pc.Top = (parent.Height - pc.Height) / 2;
                 parent.Controls.Add(pc);

@@ -47,13 +47,13 @@
             // 
             this.splitContainer.Panel2.Controls.Add(this.button2);
             this.splitContainer.Panel2.Controls.Add(this.button1);
-            this.splitContainer.Size = new System.Drawing.Size(1048, 642);
-            this.splitContainer.SplitterDistance = 529;
+            this.splitContainer.Size = new System.Drawing.Size(1009, 576);
+            this.splitContainer.SplitterDistance = 474;
             this.splitContainer.TabIndex = 0;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(914, 51);
+            this.button2.Location = new System.Drawing.Point(839, 23);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 40);
             this.button2.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(490, 51);
+            this.button1.Location = new System.Drawing.Point(466, 23);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 40);
             this.button1.TabIndex = 0;
@@ -75,7 +75,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.splitContainer);
             this.Name = "GameControl";
-            this.Size = new System.Drawing.Size(1048, 642);
+            this.Size = new System.Drawing.Size(1009, 576);
             this.splitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();
             this.splitContainer.ResumeLayout(false);

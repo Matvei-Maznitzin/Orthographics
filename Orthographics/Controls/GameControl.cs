@@ -13,10 +13,17 @@ namespace Orthographics
     public partial class GameControl : UserControl
     {
         Control parent;
-        public GameControl(Control parent)
+        long userId;
+        long theoryId;
+        public GameControl(Control parent, long userId)
         {
             InitializeComponent();
             this.parent = parent;
+            this.userId = userId;
+            TheoryControl tc = new TheoryControl("../../Theory/page_1.html");
+            tc.Dock = DockStyle.Fill;
+            tc.Margin = new Padding(10);
+            this.splitContainer.Panel1.Controls.Add(tc);
         }
     }
 }

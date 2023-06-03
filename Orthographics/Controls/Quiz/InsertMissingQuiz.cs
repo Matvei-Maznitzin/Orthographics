@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Orthographics
+namespace Orthographics.Controls.Quiz
 {
-    public partial class TheoryControl : UserControl
+    public partial class InsertMissingQuiz : UserControl
     {
-        public TheoryControl()
+        public InsertMissingQuiz()
         {
             InitializeComponent();
         }
