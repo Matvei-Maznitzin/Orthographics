@@ -363,3 +363,10 @@ MigrationBackup/
 FodyWeavers.xsd
 /Orthographics/OrthographicsDB_log.ldf
 /Orthographics/OrthographicsDB.mdf
+/Orthographics/OrthographicsDB_log.ldf
+/Orthographics/OrthographicsDB.mdf
+/Orthographics/OrthographicsDBDataSet.xss
+/Orthographics/OrthographicsDBDataSet.xsd
+/Orthographics/OrthographicsDBDataSet.xsc
+/Orthographics/OrthographicsDBDataSet.Designer.cs
+/Orthographics/OrthographicsDBDataSet.cs
