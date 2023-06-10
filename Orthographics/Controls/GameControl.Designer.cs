@@ -59,6 +59,7 @@
             this.cancelButton.TabIndex = 1;
             this.cancelButton.Text = "Завершить";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // nextButton
             // 
@@ -68,6 +69,7 @@
             this.nextButton.TabIndex = 0;
             this.nextButton.Text = "Далее";
             this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // GameControl
             // 

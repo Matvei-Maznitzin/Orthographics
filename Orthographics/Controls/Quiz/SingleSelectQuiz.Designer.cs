@@ -45,7 +45,7 @@
             // 
             // textQuestionLabel
             // 
-            this.textQuestionLabel.Location = new System.Drawing.Point(24, 47);
+            this.textQuestionLabel.Location = new System.Drawing.Point(24, 50);
             this.textQuestionLabel.Name = "textQuestionLabel";
             this.textQuestionLabel.Size = new System.Drawing.Size(649, 82);
             this.textQuestionLabel.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             // answersGroupBox
             // 
-            this.answersGroupBox.Location = new System.Drawing.Point(27, 147);
+            this.answersGroupBox.Location = new System.Drawing.Point(27, 152);
             this.answersGroupBox.Name = "answersGroupBox";
             this.answersGroupBox.Size = new System.Drawing.Size(646, 100);
             this.answersGroupBox.TabIndex = 2;
@@ -61,12 +61,13 @@
             // 
             // answerButton
             // 
-            this.answerButton.Location = new System.Drawing.Point(562, 272);
+            this.answerButton.Location = new System.Drawing.Point(562, 269);
             this.answerButton.Name = "answerButton";
             this.answerButton.Size = new System.Drawing.Size(111, 40);
             this.answerButton.TabIndex = 3;
             this.answerButton.Text = "Ответить";
             this.answerButton.UseVisualStyleBackColor = true;
+            this.answerButton.Click += new System.EventHandler(this.answerButton_Click);
             // 
             // SingleSelectQuiz
             // 

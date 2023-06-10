@@ -48,11 +48,12 @@
             // 
             this.scoreLabel.AutoSize = true;
             this.scoreLabel.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.scoreLabel.Location = new System.Drawing.Point(634, 30);
+            this.scoreLabel.Location = new System.Drawing.Point(609, 30);
             this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(77, 35);
+            this.scoreLabel.Size = new System.Drawing.Size(92, 35);
             this.scoreLabel.TabIndex = 1;
-            this.scoreLabel.Text = "Счёт";
+            this.scoreLabel.Text = "Счёт: ";
+            this.scoreLabel.Click += new System.EventHandler(this.scoreLabel_Click);
             // 
             // exitButton
             // 
@@ -63,6 +64,7 @@
             this.exitButton.TabIndex = 2;
             this.exitButton.Text = "Выход";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // newGameButton
             // 
@@ -85,6 +87,7 @@
             this.Controls.Add(this.userNameLabel);
             this.Name = "ProfileControl";
             this.Size = new System.Drawing.Size(871, 444);
+            this.Load += new System.EventHandler(this.ProfileControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

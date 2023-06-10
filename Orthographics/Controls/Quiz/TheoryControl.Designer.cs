@@ -1,4 +1,4 @@
-﻿namespace Orthographics
+﻿namespace Orthographics.Controls.Quiz
 {
     partial class TheoryControl
     {
@@ -35,21 +35,20 @@
             // 
             this.webBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webBrowser.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser.Margin = new System.Windows.Forms.Padding(10);
             this.webBrowser.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser.Name = "webBrowser";
-            this.webBrowser.Size = new System.Drawing.Size(622, 303);
+            this.webBrowser.ScrollBarsEnabled = false;
+            this.webBrowser.Size = new System.Drawing.Size(900, 349);
             this.webBrowser.TabIndex = 0;
             // 
             // TheoryControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Controls.Add(this.webBrowser);
-            this.Margin = new System.Windows.Forms.Padding(10);
             this.Name = "TheoryControl";
-            this.Size = new System.Drawing.Size(933, 454);
+            this.Size = new System.Drawing.Size(900, 349);
+            this.Load += new System.EventHandler(this.TheoryControl_Load);
             this.ResumeLayout(false);
 
         }

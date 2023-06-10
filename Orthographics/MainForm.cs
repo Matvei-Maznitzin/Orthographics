@@ -23,7 +23,6 @@ namespace Orthographics
             mmc.Left = (this.ClientSize.Width - mmc.Width) / 2;
             mmc.Top = (this.ClientSize.Height - mmc.Height) / 2;
             MainPanel.Controls.Add(mmc);
-
         }
     }
 }

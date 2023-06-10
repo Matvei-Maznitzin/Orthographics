@@ -36,12 +36,13 @@
             // 
             // answerButton
             // 
-            this.answerButton.Location = new System.Drawing.Point(562, 270);
+            this.answerButton.Location = new System.Drawing.Point(562, 269);
             this.answerButton.Name = "answerButton";
             this.answerButton.Size = new System.Drawing.Size(111, 40);
             this.answerButton.TabIndex = 7;
             this.answerButton.Text = "Ответить";
             this.answerButton.UseVisualStyleBackColor = true;
+            this.answerButton.Click += new System.EventHandler(this.answerButton_Click);
             // 
             // answersGroupBox
             // 

@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace Orthographics
 {
-    internal class Question
+    public class Question
     {
         private long questionId;
         private string type;
         private string image;
-        private string rank;
+        private double rank;
+        private List<Answer> answers = new List<Answer>();
+        private List<QuestionItem> items = new List<QuestionItem>();
 
-        public Question(long questionId, string type, string image, string rank)
+        public Question(long questionId, string type, string image, double rank)
         {
             this.QuestionId = questionId;
             this.Type = type;
@@ -24,6 +26,8 @@ namespace Orthographics
         public long QuestionId { get => questionId; set => questionId = value; }
         public string Type { get => type; set => type = value; }
         public string Image { get => image; set => image = value; }
-        public string Rank { get => rank; set => rank = value; }
+        public double Rank { get => rank; set => rank = value; }
+        public List<Answer> Answers { get => answers; set => answers = value; }
+        public List<QuestionItem> Items { get => items; set => items = value; }
     }
 }

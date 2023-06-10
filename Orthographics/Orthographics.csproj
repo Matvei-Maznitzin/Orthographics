@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Quiz\TheoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Quiz\TheoryControl.Designer.cs">
+      <DependentUpon>TheoryControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Answer.cs" />
     <Compile Include="Controls\Quiz\InsertMissingQuiz.cs">
       <SubType>UserControl</SubType>
@@ -99,6 +105,7 @@
     <Compile Include="Controls\MainMenuControl.Designer.cs">
       <DependentUpon>MainMenuControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Theory.cs" />
     <Compile Include="OrthographicsDBDataSet.cs">
       <DependentUpon>OrthographicsDBDataSet.xsd</DependentUpon>
     </Compile>
@@ -121,12 +128,6 @@
     <Compile Include="Controls\Quiz\SingleSelectQuiz.Designer.cs">
       <DependentUpon>SingleSelectQuiz.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Quiz\TheoryControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\Quiz\TheoryControl.Designer.cs">
-      <DependentUpon>TheoryControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model\Question.cs" />
     <Compile Include="Model\QuestionItem.cs" />
     <EmbeddedResource Include="Controls\GameControl.resx">
@@ -140,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Quiz\MultipleSelectQuiz.resx">
       <DependentUpon>MultipleSelectQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Quiz\TheoryControl.resx">
+      <DependentUpon>TheoryControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -161,9 +165,6 @@
     </Compile>
     <EmbeddedResource Include="Controls\Quiz\SingleSelectQuiz.resx">
       <DependentUpon>SingleSelectQuiz.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Quiz\TheoryControl.resx">
-      <DependentUpon>TheoryControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="OrthographicsDBDataSet.xsc">
       <DependentUpon>OrthographicsDBDataSet.xsd</DependentUpon>
